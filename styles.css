@@ -18,7 +18,7 @@ main {
   width: 30%;
   margin: 0 auto;
   background-color: white;
-	height: 100vh;
+  height: 100vh;
 }
 
 #navbar {
@@ -47,7 +47,7 @@ main {
   padding-top: 3.8rem;
   padding-bottom: 4rem;
   height: 80vh;
-	background-color: white;
+  background-color: white;
 }
 
 h1 {
@@ -71,7 +71,6 @@ h1 {
 }
 
 #social-media {
-
   display: inline-flex;
   margin: 0 auto;
 }
