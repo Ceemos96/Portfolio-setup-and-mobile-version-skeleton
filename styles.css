@@ -20,7 +20,6 @@ main {
   margin: 0 auto;
   background-color: white;
   height: 100vh;
-  padding: 1rem;
 }
 
 #page-head {
@@ -76,6 +75,8 @@ h1 {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin: 0 auto;
   font-size: 22px;
 }
