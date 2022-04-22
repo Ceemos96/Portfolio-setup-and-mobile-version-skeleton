@@ -15,16 +15,31 @@ body {
 }
 
 main {
-  width: 30%;
+  min-width: 250px;
+	max-width: 450px;
   margin: 0 auto;
   background-color: white;
   height: 100vh;
+	padding: 1rem;
+}
+
+#page-head{
+	display: flex;
+	padding: 2rem;
+	justify-content: space-between;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+#logo{
+	text-decoration: none;
+	color: black;
 }
 
 #navbar {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+
 }
 
 #title {
