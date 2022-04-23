@@ -19,7 +19,7 @@ main {
   max-width: 450px;
   margin: 0 auto;
   background-color: white;
-  height: 100vh;
+
 }
 
 #page-head {
@@ -101,4 +101,30 @@ h1 {
 .fab {
   font-size: 30px;
   color: #505f79;
+}
+
+/* project section styles */
+ #projects{
+  width:100%;
+  padding:1rem;
+ }
+
+ #projects-h3{
+  color: #172b4d;
+  text-align:center;
+  text-transform: capitalize;
+  font-size:2em;
+  padding-bottom:3rem;
+  font-weight: bolder;
+}
+
+#projects-container{
+  display:grid;
+  grid-template-columns: 1fr;
+  height:auto;
+}
+
+.project-file{
+  padding-bottom:2rem;
+  margin: 0 auto;
 }
