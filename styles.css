@@ -14,8 +14,30 @@ body {
   font-family: inter, Arial, Helvetica, sans-serif;
 }
 
+button {
+  color: white;
+  background-color: #36b37f;
+  padding: 0.8rem;
+  border-radius: 7px;
+  letter-spacing: 0.3px;
+  font-size: 17px;
+  border: none;
+  text-align: center;
+}
+
+button:hover {
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+button:active {
+  background: #008552;
+  border-radius: 4px;
+}
+
 main {
-  min-width: 250px;
+  min-width: 200px;
   max-width: 500px;
   margin: 0 auto;
   background-color: white;
@@ -185,6 +207,17 @@ hr {
   position: relative;
 }
 
+.stack-list li {
+  background-color: white;
+  color: #36b37e;
+  height: 40px;
+  padding: 0.7rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0.5rem;
+}
+
 .project-langs ul {
   list-style-type: none;
   padding: 8px 12px;
@@ -264,13 +297,90 @@ hr {
   position: relative;
 }
 
-.project-button button {
-  color: white;
-  background-color: #36b37f;
-  padding: 0.8rem;
-  border-radius: 7px;
-  letter-spacing: 0.3px;
-  font-size: 17px;
-  border: none;
+/* about section */
+
+#about {
+  padding: 1rem;
   text-align: center;
+  background: url(/images/illustration\ 1-\ about\ me-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#about-header {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.3px;
+  color: #172b4d;
+  margin-bottom: 2rem;
+}
+
+#about-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.about-button {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 1rem;
+  position: relative;
+}
+
+#stack-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#stack-list .stack-item {
+  height: 352px;
+  width: 327px;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  margin: 1rem auto;
+  position: relative;
+}
+
+#stack-list .stack-item i {
+  border: 20px solid white;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  height: 90px;
+  right: 35%;
+  top: 10%;
+  box-shadow: 0.5rem 0.5rem rgb(232, 230, 230);
+}
+
+.stack-text {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.stack-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.stack-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
