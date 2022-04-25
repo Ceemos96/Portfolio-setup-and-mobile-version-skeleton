@@ -384,3 +384,11 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+border: none;
+  padding: 2em;
+}
