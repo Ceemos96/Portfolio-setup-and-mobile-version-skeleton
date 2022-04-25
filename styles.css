@@ -414,3 +414,15 @@ padding: 1rem;
 font-weight: 400;
 font-size: 15px;
 line-height: 24px;
+color: #091E42;
+}
+
+#contact-section p{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+text-align: center;
+color: #172B4D;
+}
