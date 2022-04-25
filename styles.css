@@ -426,3 +426,15 @@ line-height: 52px;
 text-align: center;
 color: #172B4D;
 }
+
+
+
+
+#contact-email {
+text-align: center;
+text-decoration: none;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+color: #42526E;
+}
