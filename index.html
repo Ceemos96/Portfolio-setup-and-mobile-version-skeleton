@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="stylesheet"
       href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
@@ -45,7 +45,7 @@
         </div>
 
         <!--social media section-->
-        <div id="social-media">
+        <div class="social-media">
           <ul id="contact-links">
             <li class="contact-link">
               <a
@@ -231,7 +231,7 @@
         <div id="stack-list">
           <!-- stack item -->
           <div class="stack-item">
-            <i><img src="/images/Icon-Langguage.png" alt="languagues" /></i>
+            <i><img src="./images/Icon-Langguage.png" alt="languagues" /></i>
             <div class="stack-text">
               <h4 class="stack-title">Languages</h4>
               <ul class="stack-list" id="language-list">
@@ -245,7 +245,7 @@
 
           <!-- stack item -->
           <div class="stack-item">
-            <i><img src="/images/Icon-Name.png" alt="frameworks" /></i>
+            <i><img src="./images/Icon-Name.png" alt="frameworks" /></i>
             <div class="stack-text">
               <h4 class="stack-title">Frameworks</h4>
               <ul class="stack-list" id="framework-list">
@@ -260,7 +260,7 @@
 
           <!-- stack item -->
           <div class="stack-item">
-            <i><img src="/images/Icon-Name-(1).png" alt="skill" /></i>
+            <i><img src="./images/Icon-Name-(1).png" alt="skill" /></i>
             <div class="stack-text">
               <h4 class="stack-title">Skills</h4>
               <ul class="stack-list" id="skill-list">
@@ -274,6 +274,108 @@
           </div>
         </div>
       </section>
+
+      <!-- contact section -->
+      <div id="contact-section">
+        <div id="background-img">
+          <img src="./images/contact-background.svg" alt="contact-background">
+        </div>
+        <h3>
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </h3>
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/xoqrpjkd"
+          method="post"
+        >
+          <fieldset>
+            <input
+              type="text"
+              id="name"
+              placeholder="Full Name"
+              maxlength="30"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="10"
+              rows="10"
+              maxlength="500"
+              placeholder="Enter Text Here"
+              required
+            ></textarea>
+          </fieldset>
+          <button type="submit" name="button">Get in touch</button>
+        </form>
+
+        <div id="social-media-links">
+          <ul id="contact-links2">
+            <li class="contact-link">
+              <a
+                href="https://twitter.com/ceemos_dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+
+            <li class="contact-link">
+              <a
+                href="https://www.linkedin.com/in/suleiman-olaide-97689b154/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+
+            <li class="contact-link">
+              <a
+                href="https://github.com/Ceemos96"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github-square"></i>
+              </a>
+            </li>
+
+            <li class="contact-link">
+              <a
+                href="https://medium.com/@suleimanxxolaide"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-medium"></i
+              ></a>
+            </li>
+
+            <li class="contact-link">
+              <a
+                href="https://github.com/Ceemos96"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-angellist"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="contact-email">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            Olaide.suleiman96@gmail.com
+          </a>
+        </div>
+      </div>
     </main>
   </body>
 </html>
