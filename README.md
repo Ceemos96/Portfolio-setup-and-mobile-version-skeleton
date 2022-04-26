@@ -7,6 +7,7 @@
 
 - Html
 - css
+- Linter
 
 
 ## Getting Started
