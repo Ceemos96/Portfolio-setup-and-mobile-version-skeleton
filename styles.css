@@ -391,6 +391,13 @@ hr {
 #contact-section {
   width: 100%;
   padding-bottom: 7rem;
+  position: relative;
+}
+
+#background-img {
+  position: absolute;
+  right: 0;
+  bottom: 25%;
 }
 
 #contact-form {
@@ -405,6 +412,7 @@ hr {
   text-align: center;
   color: #172b4d;
   padding: 0 1rem;
+  font-family: 'Inter' Arial, Helvetica, sans-serif;
 }
 
 fieldset {
