@@ -14,7 +14,9 @@
   <body>
     <main>
       <!--toolbar section-->
-      <header id="page-head">
+      <section id="header-section">
+        <img src="./images/headline-bg.svg" alt="headline-bg" id="headeline-bg">
+        <header id="page-head">
         <div id="header-logo">
           <a href="#welcome-section" id="logo">Welcome</a>
         </div>
@@ -23,6 +25,12 @@
             <a href="#welcome-section" class="nav-link"
               ><i class="fa fa-bars" aria-hidden="true"></i
             ></a>
+            <ul id="menu-items">
+              <a href="#" class="nav-link"><li>Portfolio</li></a>
+              <a href="#" class="nav-link"><li>About</li></a>
+              <a href="#" class="nav-link"><li>Contact</li></a>
+              
+            </ul>
           </div>
         </nav>
       </header>
@@ -31,7 +39,7 @@
       <section id="headline">
         <div id="introduction">
           <h1>
-            <span id="line1"> Hi there, I'm</span> <br />
+            <span id="line1"> Hi there, I'm</span> <br id="first-break" />
             Ceemos <br />
             <span id="colored">I am a Software Developer</span>
           </h1>
@@ -43,6 +51,8 @@
             </p>
           </div>
         </div>
+      </section>
+
 
         <!--social media section-->
         <div class="social-media">
@@ -98,18 +108,18 @@
             </li>
           </ul>
         </div>
+        <div class="arrow-case">
+          <i class="fas fa-angle-down"></i>
+        </div>
       </section>
 
       <!--projects section-->
       <section id="projects">
-        <div class="arrow-case">
-          <i class="fas fa-angle-down"></i>
-        </div>
         <div id="projects-heading">
-          <h3 id="projects-h3">My Recent <br />Works</h3>
+          <h3 id="projects-h3">My Recent <br id="break" />Works</h3>
         </div>
         <div id="horizontal-rule">
-          <hr />
+          <hr id="rule"/>
         </div>
         <div id="projects-container">
           <!-- project one -->
@@ -200,6 +210,27 @@
             </div>
             <div class="project-text">
               <p class="project-title">E-commerce Website</p>
+              <div class="project-langs">
+                <ul class="lang-list">
+                  <li>ruby on rails</li>
+                  <li>css</li>
+                  <li>javascript</li>
+                  <li>html</li>
+                </ul>
+              </div>
+              <div class="project-button">
+                <button type="button">See Project</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- project six -->
+          <div class="project-file">
+            <div class="project-image">
+              <div class="image-placeholder"></div>
+            </div>
+            <div class="project-text">
+              <p class="project-title">Calculator</p>
               <div class="project-langs">
                 <ul class="lang-list">
                   <li>ruby on rails</li>
