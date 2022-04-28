@@ -720,5 +720,16 @@ textarea {
     animation-duration: 3s;
     animation-name: name-slide;
   }
+
+  @keyframes name-slide {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
   
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 }
