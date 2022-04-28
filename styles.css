@@ -715,4 +715,10 @@ textarea {
     width: 100%;
     padding-top: 1rem;
   }
+
+  #my-name {
+    animation-duration: 3s;
+    animation-name: name-slide;
+  }
+  
 }
