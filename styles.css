@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
 
 *,
 ::before,
@@ -10,7 +10,6 @@
 
 body {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
   font-family: inter, Arial, Helvetica, sans-serif;
 }
 
@@ -23,6 +22,7 @@ button {
   font-size: 17px;
   border: none;
   text-align: center;
+  cursor: pointer;
 }
 
 button:hover {
@@ -40,7 +40,16 @@ main {
   min-width: 200px;
   max-width: 500px;
   margin: 0 auto;
-  background-color: white;
+}
+
+#headeline-bg {
+  display: none;
+}
+
+#header-section {
+  width: 920;
+  height: 80vh;
+  margin: 0 auto;
 }
 
 #page-head {
@@ -54,6 +63,7 @@ main {
 #logo {
   text-decoration: none;
   color: black;
+  font-weight: 600;
 }
 
 #navbar {
@@ -68,6 +78,10 @@ main {
   font-weight: 900;
 }
 
+#menu-items {
+  display: none;
+}
+
 #nav-links a {
   color: black;
   font-size: 20px;
@@ -78,10 +92,8 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding-top: 3.8rem;
-  padding-bottom: 4rem;
-  height: 80vh;
-  background-color: white;
+  padding-top: 3em;
+  padding-bottom: 2rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -97,11 +109,11 @@ h1 {
   color: #172b4d;
   text-align: center;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 0 auto;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 #colored {
@@ -109,8 +121,9 @@ h1 {
 }
 
 .social-media {
-  display: inline-flex;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 #contact-links {
@@ -130,12 +143,12 @@ h1 {
 #projects {
   width: 100%;
   padding: 1rem;
+  margin-top: 4rem;
 }
 
 .arrow-case {
   display: flex;
   justify-content: center;
-  border: 1px solid rgb(166, 158, 158);
   width: 70px;
   border-radius: 50%;
   padding: 0.5rem;
@@ -143,7 +156,7 @@ h1 {
 }
 
 .fa-angle-down {
-  color: #36b37e;
+  color: #505f79;
   font-size: 30px;
 }
 
@@ -151,9 +164,9 @@ h1 {
   color: #172b4d;
   text-align: center;
   text-transform: capitalize;
-  font-size: 3em;
+  font-size: 40px;
   padding: 3rem 0;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 #horizontal-rule {
@@ -199,7 +212,7 @@ hr {
   padding: 0.2rem;
   text-decoration: none;
   text-transform: capitalize;
-  font-weight: bolder;
+  font-weight: 600;
   color: #3a4a42;
   text-align: center;
   margin: 16px 0;
@@ -300,6 +313,9 @@ hr {
 }
 
 /* about section */
+#about-background-images {
+  display: none;
+}
 
 #about {
   padding: 1rem;
@@ -400,6 +416,18 @@ hr {
   bottom: 25%;
 }
 
+#contact-bg-left {
+  display: none;
+}
+
+#contact-bg-rightt {
+  display: none;
+}
+
+#contact-desktop-bg {
+  display: none;
+}
+
 #contact-form {
   padding-bottom: 2rem;
 }
@@ -470,4 +498,238 @@ textarea {
   font-size: 20px;
   line-height: 32px;
   color: #42526e;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    font-family: inter, Arial, Helvetica, sans-serif;
+    position: relative;
+  }
+
+  main {
+    margin: 0 auto;
+    min-width: 100vw;
+    position: relative;
+  }
+
+  /* toolbar section */
+  #header-section {
+    margin-bottom: 15rem;
+    height: 110vh;
+  }
+
+  #headeline-bg {
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  #page-head {
+    background: transparent;
+    justify-content: center;
+  }
+
+  #logo {
+    position: absolute;
+    display: none;
+  }
+
+  .fa-bars {
+    position: absolute;
+    display: none;
+  }
+
+  #menu-items {
+    display: flex;
+    padding-right: 40px;
+    list-style-type: none;
+    width: 100%;
+  }
+
+  #menu-items a {
+    margin-left: 2rem;
+    color: #42526e;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  /* headline section */
+
+  #headline {
+    padding-bottom: 1rem;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #introduction {
+    margin: 100px 260px 0 260px;
+  }
+
+  #introduction h1 {
+    font-size: 48px;
+    line-height: 1.1em;
+    font-weight: 800;
+  }
+
+  #first-break {
+    display: none;
+  }
+
+  #text-section p {
+    font-size: 20px;
+    line-height: 1.2em;
+    width: 800px;
+    padding-bottom: 2rem;
+  }
+
+  /* porjects section */
+
+  #rule {
+    display: none;
+  }
+
+  #break {
+    display: none;
+  }
+
+  #projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 12rem;
+    padding-bottom: 5rem;
+  }
+
+  .project-file {
+    margin-bottom: 2rem;
+  }
+
+  /* about section */
+  #about {
+    position: relative;
+    padding-bottom: 7rem;
+  }
+
+  #about-background-images {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    z-index: -1;
+  }
+
+  #about-background-image-1 {
+    float: left;
+  }
+
+  #about-background-image-2 {
+    float: right;
+  }
+
+  #about-text {
+    width: 920px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  #stack-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem 12rem;
+  }
+
+  /* contact section */
+
+  #background-img {
+    display: none;
+  }
+
+  #contact-desktop-bg {
+    position: absolute;
+    bottom: 19%;
+    left: 20%;
+    display: block;
+  }
+
+  #contact-bg-left {
+    position: absolute;
+    bottom: 19%;
+    left: 0;
+    display: block;
+  }
+
+  #contact-bg-rightt {
+    position: absolute;
+    bottom: 19%;
+    right: 0;
+    display: block;
+  }
+
+  #top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 14rem;
+    margin-bottom: 10rem;
+  }
+
+  #contact-section h3 {
+    font-size: 30px;
+    line-height: 52px;
+    width: 100%;
+    text-align: left;
+    margin-top: 2rem;
+    font-weight: 700;
+    padding-right: 1rem;
+  }
+
+  fieldset {
+    padding: 0;
+  }
+
+  #message {
+    border: solid 1px #36b37e;
+  }
+
+  #contact-section button {
+    margin-top: 2rem;
+  }
+
+  #contact-email {
+    display: none;
+  }
+
+  #social-media-links {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 45%;
+  }
+
+  #contact-links2 {
+    position: absolute;
+    bottom: 2%;
+    border-top: 1px solid rgb(158, 158, 158);
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  #my-name {
+    animation-duration: 3s;
+    animation-name: name-slide;
+  }
+
+  @keyframes name-slide {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 }
