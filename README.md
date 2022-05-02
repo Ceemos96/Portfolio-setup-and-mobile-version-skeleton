@@ -7,6 +7,9 @@
 
 ![alt text](https://raw.githubusercontent.com/Ceemos96/Portfolio-setup-and-mobile-version-skeleton/6055b96f2387199bac5fc5c809d5c61c0546cc35/images/UI-sreenshot.png)
 
+## Live Demo
+
+For a Live demo of the website visit this link [@livedemo](https://ceemos96.github.io/Portfolio-setup-and-mobile-version-skeleton/)
 
 ## Built With
 
