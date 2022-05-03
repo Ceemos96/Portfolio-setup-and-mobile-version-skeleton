@@ -121,7 +121,7 @@ h1 {
 }
 
 #colored {
-  color: #36b37e;
+  color: #1D6249;
 }
 
 .social-media {
@@ -164,7 +164,7 @@ h1 {
   font-size: 30px;
 }
 
-#projects-h3 {
+#projects-h2 {
   color: #172b4d;
   text-align: center;
   text-transform: capitalize;
@@ -228,7 +228,7 @@ hr {
 
 .stack-list li {
   background-color: white;
-  color: #36b37e;
+  color: #1D6249;
   height: 40px;
   padding: 0.7rem;
   border-radius: 10px;
@@ -239,17 +239,18 @@ hr {
 
 .project-langs ul {
   list-style-type: none;
-  padding: 8px 12px;
+  padding: 8px 5px;
   font-size: 12px;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .project-langs ul li {
   font-weight: bolder;
   letter-spacing: 0.03em;
   padding: 0.5rem;
-  line-height: 16px;
-  height: 34px;
+  line-height: 10px;
+  height: 30px;
   border-radius: 7px;
   background-color: #ebf0ee;
   margin: 0.5rem;
