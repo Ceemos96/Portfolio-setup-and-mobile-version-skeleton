@@ -15,7 +15,7 @@ body {
 
 button {
   color: white;
-  background-color:#1D6249;
+  background-color: #1d6249;
   padding: 0.8rem;
   border-radius: 7px;
   letter-spacing: 0.3px;
@@ -121,7 +121,7 @@ h1 {
 }
 
 #colored {
-  color: #1D6249;
+  color: #1d6249;
 }
 
 .social-media {
@@ -228,7 +228,7 @@ hr {
 
 .stack-list li {
   background-color: white;
-  color: #1D6249;
+  color: #1d6249;
   height: 40px;
   padding: 0.7rem;
   border-radius: 10px;
