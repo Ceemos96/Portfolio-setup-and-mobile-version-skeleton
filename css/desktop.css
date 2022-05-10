@@ -28,7 +28,7 @@
     display: none;
   }
 
-  .menu{
+  .menu {
     display: block;
   }
 
@@ -41,11 +41,11 @@
     height: auto;
   }
 
-  #close-menu{
+  #close-menu {
     display: none;
   }
 
-  #menu-items li a{
+  #menu-items li a {
     margin-left: 2rem;
     color: #42526e;
     font-weight: 600;
