@@ -5,3 +5,11 @@ const closeMenu = document.querySelector('#close-menu');
 bars.addEventListener('click', ()=>{
  menu.classList.toggle('show-menu')
 });
+
+bars.addEventListener('click', ()=>{
+    menu.classList.toggle('show-menu')
+});
+
+closeMenu.addEventListener('click', ()=>{
+    menu.classList.toggle('show-menu')
+})
