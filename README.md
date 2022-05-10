@@ -4,8 +4,10 @@
 
 
 > This project includes the mobile version and the desktop version of the portfolio project using css grid and flexbox for responsiveness. 
-> it als includes Added functionality to the menu toggle icon using Javascript. 
- Here is a preview of the Project UI
+
+> It also includes Added functionality to the menu toggle icon using Javascript. 
+
+> Here is a preview of the Project UI:
 
 ![alt text](https://raw.githubusercontent.com/Ceemos96/Portfolio-setup-and-mobile-version-skeleton/6055b96f2387199bac5fc5c809d5c61c0546cc35/images/UI-sreenshot.png)
 
