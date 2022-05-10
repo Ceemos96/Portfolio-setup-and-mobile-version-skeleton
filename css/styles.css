@@ -11,6 +11,8 @@
 body {
   width: 100%;
   font-family: inter, Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 button {
