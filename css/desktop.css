@@ -28,14 +28,24 @@
     display: none;
   }
 
-  #menu-items {
-    display: flex;
-    padding-right: 40px;
-    list-style-type: none;
-    width: 100%;
+  .menu{
+    display: block;
   }
 
-  #menu-items a {
+  #menu-items {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    background: none;
+    height: auto;
+  }
+
+  #close-menu{
+    display: none;
+  }
+
+  #menu-items li a{
     margin-left: 2rem;
     color: #42526e;
     font-weight: 600;
