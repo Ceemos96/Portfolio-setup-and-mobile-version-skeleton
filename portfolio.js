@@ -15,4 +15,5 @@ closeMenu.addEventListener('click', () => {
 
 links.addEventListener('click', () => {
   document.body.style.overflowY = 'scroll';
+  menu.classList.toggle('show-menu');
 });
