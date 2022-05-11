@@ -11,6 +11,8 @@
 body {
   width: 100%;
   font-family: inter, Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -52,23 +54,26 @@ main {
   margin: 0 auto;
 }
 
-#page-head {
+#navbar {
+  width: 100%;
+}
+
+#nav-top {
   display: flex;
-  padding: 2rem;
   justify-content: space-between;
+}
+
+#page-head {
+  padding: 2rem;
   font-size: 25px;
   font-weight: bolder;
+  width: 100%;
 }
 
 #logo {
   text-decoration: none;
   color: black;
   font-weight: 600;
-}
-
-#navbar {
-  display: flex;
-  justify-content: space-between;
 }
 
 #title {
@@ -78,13 +83,57 @@ main {
   font-weight: 900;
 }
 
-#menu-items {
+.menu {
   display: none;
+}
+
+#menu-items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: block;
+  padding: 1.9rem;
+  list-style-type: none;
+  background: white;
+  height: 100vh;
+  width: 100%;
+  line-height: 44px;
+}
+
+#close-menu {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+#close {
+  color: #67798e;
+  font-size: 19px;
 }
 
 #nav-links a {
   color: black;
   font-size: 20px;
+}
+
+#contact-email a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+}
+
+#menu-items li a {
+  font-size: 32px;
+  font-weight: 600;
+  color: #3a4a42;
+  text-decoration: none;
+}
+
+.show-menu {
+  display: block;
 }
 
 #headline {
@@ -447,12 +496,4 @@ textarea {
 #contact-email {
   text-align: center;
   margin: 1.5rem 0;
-}
-
-#contact-email a {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  color: #42526e;
 }
