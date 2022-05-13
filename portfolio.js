@@ -251,16 +251,6 @@ for (let i = 0; i < projectsDetails.length; i += 1) {
 
   projectsContainer.appendChild(popupWrapper);
 
-  // function openModal() {
-  //   document.querySelector('.popupWrapper').style.display = 'block';
-  //   console.log('yay')
-  // }
-
-  // function closeModal() {
-  //   document.querySelector('.popupWrapper').style.display = 'none';
-  //   console.log('yay')
-  // }
-
   closePopup.addEventListener('click', closeModal);
 }
 
@@ -272,9 +262,9 @@ const formButton = document.getElementById('form-button');
 const emailError = document.getElementById('email-error');
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  if (emailInput.value !== emailInput.value.toLowerCase() ) {
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
     emailError.textContent = 'Email-ID must be in lowercase!';
     formButton.reportValidity();
+    e.preventDefault();
   }
 });
