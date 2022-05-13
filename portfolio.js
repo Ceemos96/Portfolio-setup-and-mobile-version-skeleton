@@ -132,7 +132,7 @@ for (let i = 0; i < projectsDetails.length; i += 1) {
   const projectText = document.createElement('div');
   projectText.classList.add('project-text');
 
-  const projectTitle = document.createElement('p');
+  const projectTitle = document.createElement('h3');
   projectTitle.classList.add('project-title');
   projectTitle.textContent = projectsDetails[i].title;
 
@@ -250,16 +250,6 @@ for (let i = 0; i < projectsDetails.length; i += 1) {
   popupWrapper.appendChild(popup);
 
   projectsContainer.appendChild(popupWrapper);
-
-  // function openModal() {
-  //   document.querySelector('.popupWrapper').style.display = 'block';
-  //   console.log('yay')
-  // }
-
-  // function closeModal() {
-  //   document.querySelector('.popupWrapper').style.display = 'none';
-  //   console.log('yay')
-  // }
 
   closePopup.addEventListener('click', closeModal);
 }
