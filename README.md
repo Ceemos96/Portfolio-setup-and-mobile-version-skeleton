@@ -5,7 +5,7 @@
 
 > This project includes the mobile version and the desktop version of the portfolio project using css grid and flexbox for responsiveness. 
 
-> It also includes Added functionality to the menu toggle icon using Javascript. 
+> It also includes Added functionality to the menu toggle icon and a popup for more project details Javascript. 
 
 > Here is a preview of the Project UI:
 

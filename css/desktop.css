@@ -45,6 +45,11 @@
     display: none;
   }
 
+  .popup-buttons button a {
+    color: white;
+    text-decoration: none;
+  }
+
   #menu-items li a {
     margin-left: 2rem;
     color: #42526e;
@@ -73,6 +78,14 @@
 
   #first-break {
     display: none;
+  }
+
+  .popup-text p {
+    font-size: 13px;
+    color: #344563;
+    line-height: 25px;
+    text-align: left;
+    text-align: justify;
   }
 
   #text-section p {
@@ -213,6 +226,11 @@
     border: solid 1px #36b37e;
   }
 
+  .popup-buttons button {
+    font-size: 17px;
+    width: 158px;
+  }
+
   #contact-section button {
     margin-top: 2rem;
   }
@@ -234,5 +252,103 @@
     border-top: 1px solid rgb(158, 158, 158);
     width: 100%;
     padding-top: 1rem;
+  }
+
+  /* popup styles */
+
+  .popup-wrapper {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: #dfe1e6;
+    position: fixed;
+    z-index: 999;
+    display: none;
+  }
+
+  .popup {
+    width: 720px;
+    height: 96vh;
+    background: white;
+    padding: 10px;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .close-popup {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    color: white;
+    font-size: 11px;
+    margin: 0.1rem 0;
+    background: #ebecf0;
+    padding: 0.4rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .popup-image {
+    margin-top: 2rem;
+    height: 400px;
+    background: url(/images/project-popup-desktop-image.png);
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .popup-text {
+    position: relative;
+    margin: 0.7rem 0;
+  }
+
+  .popup-header {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 30px;
+    color: #172b4d;
+    margin: 0.2rem 0;
+  }
+
+  .popup-header #br1 {
+    display: none;
+  }
+
+  .technologies {
+    display: none;
+  }
+
+  .technologies-desktop {
+    display: flex;
+    list-style-type: none;
+    margin: 0.6rem 0;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .technologies-desktop li {
+    font-weight: 600;
+    font-size: 11px;
+    background: #ebf0ee;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #3a4a42;
+  }
+
+  .popup-buttons {
+    text-align: center;
+    margin: 0.3rem 0;
+    position: absolute;
+    top: 1%;
+    right: 0;
+    width: 50%;
+  }
+
+  .popup-buttons button i {
+    margin-left: 1rem;
   }
 }

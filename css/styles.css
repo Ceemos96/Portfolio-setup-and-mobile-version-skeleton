@@ -112,6 +112,11 @@ main {
   font-size: 19px;
 }
 
+.popup-buttons button a {
+  color: white;
+  text-decoration: none;
+}
+
 #nav-links a {
   color: black;
   font-size: 20px;
@@ -187,7 +192,7 @@ h1 {
   justify-content: space-around;
 }
 
-.fab {
+.contact-link i {
   font-size: 30px;
   color: #505f79;
 }
@@ -289,9 +294,18 @@ hr {
 .project-langs ul {
   list-style-type: none;
   padding: 8px 5px;
-  font-size: 12px;
+  font-size: 11px;
   margin-bottom: 3rem;
   text-align: center;
+}
+
+.technologies li {
+  font-weight: 600;
+  font-size: 11px;
+  background: #ebf0ee;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #3a4a42;
 }
 
 .project-langs ul li {
@@ -371,6 +385,10 @@ hr {
   background-color: #ebf0ee;
   margin: 1rem auto;
   position: relative;
+}
+
+.popup-buttons button i {
+  margin-left: 1rem;
 }
 
 #stack-list .stack-item i {
@@ -477,6 +495,11 @@ textarea {
   color: #091e42;
 }
 
+.popup-buttons button {
+  font-size: 17px;
+  width: 158px;
+}
+
 #contact-section button {
   display: block;
   margin: 0 auto;
@@ -496,4 +519,79 @@ textarea {
 #contact-email {
   text-align: center;
   margin: 1.5rem 0;
+}
+
+/* pop-up styes */
+
+.popup-wrapper {
+  width: 100%;
+  height: 110vh;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background-color: #dfe1e6;
+  position: fixed;
+  z-index: 999;
+  display: none;
+}
+
+.popup {
+  width: 90%;
+  height: 98vh;
+  background: white;
+  padding: 10px;
+  margin: 10px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  border-radius: 15px;
+}
+
+.close-popup {
+  position: absolute;
+  right: 12%;
+  top: 3.6%;
+  color: white;
+  font-size: 25px;
+}
+
+.popup-image {
+  width: 100%;
+  height: 170px;
+  background: url(/images/popup-image.png);
+}
+
+.popup-header {
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 30px;
+  color: #172b4d;
+  margin: 0.2rem 0;
+  width: 60%;
+}
+
+.technologies-desktop {
+  display: none;
+}
+
+.technologies {
+  display: flex;
+  list-style-type: none;
+  margin: 0.4rem 0;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.popup-text p {
+  font-size: 15px;
+  color: #344563;
+  line-height: 22px;
+  text-align: left;
+  text-align: justify;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.3rem 0;
+  width: 100%;
 }
