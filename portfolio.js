@@ -263,3 +263,18 @@ for (let i = 0; i < projectsDetails.length; i += 1) {
 
   closePopup.addEventListener('click', closeModal);
 }
+
+// validate contact form
+
+const form = document.getElementById('contact-form');
+const emailInput = document.getElementById('email');
+const formButton = document.getElementById('form-button');
+const emailError = document.getElementById('email-error');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (emailInput.value !== emailInput.value.toLowerCase() ) {
+    emailError.textContent = 'Email-ID must be in lowercase!';
+    formButton.reportValidity();
+  }
+});
