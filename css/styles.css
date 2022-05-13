@@ -289,7 +289,7 @@ hr {
 .project-langs ul {
   list-style-type: none;
   padding: 8px 5px;
-  font-size: 12px;
+  font-size: 11px;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -511,8 +511,7 @@ textarea {
   height: 100%;
   position: fixed;
   z-index: 999;
-  /* display: none; */
-
+  display: none;
 }
 
 .popup{
@@ -546,6 +545,11 @@ textarea {
   line-height: 30px;
   color: #172B4D;
   margin: 0.2rem 0;
+  width: 60%;
+}
+
+.technologies-desktop{
+  display: none;
 }
 
 .technologies{
@@ -568,14 +572,16 @@ textarea {
 .popup-text p{
   font-size: 15px;
   color:#344563;
-  line-height: 25px;
+  line-height: 22px;
   text-align: left;
   text-align:  justify;
 }
 
 .popup-buttons{
-text-align: center;
+display: flex;
+justify-content: space-around;
 margin: 0.3rem 0;
+width: 100%;
 }
 
 .popup-buttons button{
