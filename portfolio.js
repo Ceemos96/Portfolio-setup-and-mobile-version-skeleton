@@ -268,3 +268,35 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+// set up local storage
+
+const nameInput = document.getElementById('name');
+const mailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+
+const nameValue = nameInput.value;
+const mailValue = mailInput.value;
+const messageValue = messageInput.value;
+
+formButton.onclick = function saveUserData() {
+  const storageObject = {
+    name: nameValue,
+    email: mailValue,
+    message: messageValue,
+  };
+
+  if (nameValue && mailValue && messageValue) {
+    localStorage.setItem('userInputs', JSON.stringify(storageObject));
+  }
+};
+
+function displayUserInput() {
+  const { name, email, message } = JSON.parse(localStorage.getItem('userInputs'));
+
+  nameInput.value = name;
+  mailInput.value = email;
+  messageInput.value = message;
+}
+
+displayUserInput();
