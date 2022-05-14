@@ -268,3 +268,38 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+// set up local storage
+
+const contactForm = document.getElementById('contact-form');
+const nameInput = document.getElementById('name');
+const mailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // store user inputs in an object
+
+  const storageObject = {
+    name: nameInput.value,
+    email: mailInput.value,
+    message: messageInput.value,
+  };
+
+  localStorage.setItem('userInputs', JSON.stringify(storageObject));
+});
+
+// display user input if local storage already exists
+
+function displayUserInput() {
+  if (JSON.parse(localStorage.getItem('userInputs'))) {
+    const { name, email, message } = JSON.parse(localStorage.getItem('userInputs'));
+
+    nameInput.value = name;
+    mailInput.value = email;
+    messageInput.value = message;
+  }
+}
+
+displayUserInput();
