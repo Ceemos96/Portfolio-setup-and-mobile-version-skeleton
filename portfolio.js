@@ -274,6 +274,7 @@ form.addEventListener('submit', (e) => {
 const contactForm = document.getElementById('contact-form');
 const nameInput = document.getElementById('name');
 const mailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
 
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -283,6 +284,7 @@ contactForm.addEventListener('submit', (e) => {
   const storageObject = {
     name: nameInput.value,
     email: mailInput.value,
+    message: messageInput.value,
   };
 
   localStorage.setItem('userInputs', JSON.stringify(storageObject));
@@ -292,10 +294,11 @@ contactForm.addEventListener('submit', (e) => {
 
 function displayUserInput() {
   if (JSON.parse(localStorage.getItem('userInputs'))) {
-    const { name, email } = JSON.parse(localStorage.getItem('userInputs'));
+    const { name, email, message } = JSON.parse(localStorage.getItem('userInputs'));
 
     nameInput.value = name;
     mailInput.value = email;
+    messageInput.value = message;
   }
 }
 
