@@ -271,32 +271,32 @@ form.addEventListener('submit', (e) => {
 
 // set up local storage
 
+const contactForm = document.getElementById('contact-form');
 const nameInput = document.getElementById('name');
 const mailInput = document.getElementById('email');
-const messageInput = document.getElementById('message');
 
-const nameValue = nameInput.value;
-const mailValue = mailInput.value;
-const messageValue = messageInput.value;
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
 
-formButton.onclick = function saveUserData() {
+  // store user inputs in an object
+
   const storageObject = {
-    name: nameValue,
-    email: mailValue,
-    message: messageValue,
+    name: nameInput.value,
+    email: mailInput.value,
   };
 
-  if (nameValue && mailValue && messageValue) {
-    localStorage.setItem('userInputs', JSON.stringify(storageObject));
-  }
-};
+  localStorage.setItem('userInputs', JSON.stringify(storageObject));
+});
+
+// display user input if local storage already exists
 
 function displayUserInput() {
-  const { name, email, message } = JSON.parse(localStorage.getItem('userInputs'));
+  if (JSON.parse(localStorage.getItem('userInputs'))) {
+    const { name, email } = JSON.parse(localStorage.getItem('userInputs'));
 
-  nameInput.value = name;
-  mailInput.value = email;
-  messageInput.value = message;
+    nameInput.value = name;
+    mailInput.value = email;
+  }
 }
 
 displayUserInput();
